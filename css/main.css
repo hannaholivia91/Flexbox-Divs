@@ -97,15 +97,20 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color:#CDBBAE;
   height: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  font-family:'Montserrat', sans-serif;
+  padding-right: 5em;
+  padding-left: 5em;
   font-size: 1.25em;
   height: 100%;
+}
+
+span {
+    font-family: 'Lora', serif;
 }
 
 .wrapper {
@@ -116,16 +121,82 @@ body {
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  height: 300px;
+  color: #F4F5F5;
+  display: block;
+  
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 2rem;
 }
+
+.div-1 {
+    padding-left: 0rem;
+}
+.div-1, .div-2 {
+    border-right-style: solid;
+    border-right-width: 0.05rem;
+    
+}
+
+
+.header {
+    display:flex;
+    justify-content: flex-start;
+    padding: 3rem 0rem;
+    width: 100%;
+}
+
+.header-text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #F4F5F5;
+    font-size: 4rem;
+    padding-bottom: 0em 1em;
+    
+}
+
+.about {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border-bottom-style: solid;
+    border-color: #F4F5F5;
+    
+    
+    
+}
+    
+
+.about-text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #F4F5F5;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+
+}
+
+.fa {
+    padding-top: 2rem;
+    font-size: 4rem;
+    width: 2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color:#F4F5F5;
+  }
+    
+.footer {
+    border-top-style: solid;
+    border-color: #F4F5F5;
+} 
+
+
 
 
 
@@ -209,6 +280,24 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+   @media all and (max-width: 768px) {
+    body {
+      padding: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .div-1,.div-2,.div-3 {
+      flex-basis: 30%;
+    }
+
+    #div-2 p {
+      border-left: 1px solid #555;
+      border-right: 1px solid #555;
+      padding: 0 40px;
+    }
+}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
